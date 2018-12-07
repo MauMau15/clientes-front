@@ -5,13 +5,13 @@
 </div>
 <div class="container my-5">
   <div class="card-deck">
-    <div class="card border-primary mb-3" *ngFor="let tech of techs">
+    <div class="card border-primary shadow-lg mb-5 bg-white rounded" *ngFor="let tech of techs">
       <div class="card-header bg-primary border-primary text-center text-white">{{tech.name | uppercase}}</div>
       <div class="card-body d-flex flex-column align-items-center text-jusitfy">
         <p class="card-text">{{tech.desc}}</p>
       </div>
-      <div class="card-footer bg-transparent border-primary">
-          <a href="#" class="btn btn-block btn-outline-primary">Learn more...</a>
+      <div class="card-footer bg-primary border-primary">
+          <a [href]="tech.web" target="_blank" class="btn btn-block btn-primary">Learn more...</a>
       </div>
     </div>
   </div>
