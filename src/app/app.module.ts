@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-//router
+//routes
 import { APP_ROUTING } from './app.routes';
 
+//classes
+import { Cliente } from './classes/Cliente';
+
+//components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
