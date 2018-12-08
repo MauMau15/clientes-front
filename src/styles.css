@@ -1,5 +1,14 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin-bottom:auto;
+}
+
 .footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }

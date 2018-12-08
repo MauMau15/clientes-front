@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Clientes</a>
+  <a class="navbar-brand" [routerLink]="['Clientes']">Clientes</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,6 +9,19 @@
       <li class="nav-item" routerLinkActive="active" >
         <a class="nav-link" [routerLink]="['Technologies']">Technologies <span class="sr-only">(current)</span></a>
       </li>
+      
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Clientes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['Clientes']">Listar Clientes</a>
+          <a class="dropdown-item" [routerLink]="['Registrar-Cliente']">Agregar Clientes</a>
+          <a class="dropdown-item" href="#">Eliminar Cliente</a>
+          <a class="dropdown-item" href="#">Actualizar Cliente</a>
+        </div>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link" href="#">Meet me</a>
       </li>
